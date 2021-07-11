@@ -1,18 +1,11 @@
 a {
-  color: rgba(0, 0, 0, 0.6);
-  font-size: 20px;
-  line-height: 150%;
-  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans",
-    "Helvetica Neue", sans-serif;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: 400;
-  text-decoration: underline;
-  padding:3px;
-}
-
-a:link{
-    color: rgba(0, 0, 0, 0.6);
+  color: rgb(55, 53, 47);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: 500;
+  line-height: 1.3;
+  border-bottom: 1px solid rgba(55, 53, 47, 0.16);
 }
 
 a:visited{
@@ -47,31 +40,32 @@ body {
 h1 {
   font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans",
     "Helvetica Neue", Arial, sans-serif;
-  font-size: 52px;
+  font-size: 40px;
   font-style: normal;
   font-variant: normal;
   font-weight: 700;
-  line-height: 1.1;
+  line-height: 1.2;
 }
 
 h2 {
   font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans",
     "Helvetica Neue", Arial, sans-serif;
-  font-size: 30px;
+  font-size: 40px;
   font-style: normal;
   font-variant: normal;
   font-weight: 700;
-  line-height: 1.1;
+  line-height: 1.2;
+  margin-bottom: 20px;
 }
 
 h3 {
   font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans",
     "Helvetica Neue", Arial, sans-serif;
-  font-size: 25px;
+  font-size: 1.25em;
   font-style: normal;
   font-variant: normal;
   font-weight: 700;
-  line-height: 1.1;
+  line-height: 1.3;
 }
 
 h4 {
@@ -105,15 +99,11 @@ h6 {
 }
 
 p {
-  display: inline;
-  color: rgba(0, 0, 0, 0.6);
-  font-size: 20px;
-  line-height: 150%;
-  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans",
-    "Helvetica Neue", Arial, sans-serif;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: 400;
+    max-width: 100%;
+    width: 100%;
+    white-space: pre-wrap;
+    word-break: break-word;
+    caret-color: rgb(55, 53, 47);
 }
 
 button {

@@ -12,6 +12,8 @@ headers = {
 MAPPING_CONTENT_TYPE = {
     'paragraph': 'p',
     'heading_1': 'h1',
+    'heading_2': 'h2',
+    'heading_3': 'h3',
     'child_page': 'a',
     'to_do': 'li',
     'bulleted_list_item': 'li',
@@ -55,7 +57,7 @@ def parse_text_item(item, raw_html, tag):
             url = x['text']['link']
             content = x['plain_text']
             if url:
-                html = f'<a href={url}> {content} </a>'
+                html = f'<a href={url}>{content} </a>'
             else:
                 html = f'<{tag}> {content} </{tag}>'
             raw_html += html
@@ -76,6 +78,6 @@ def parse_content(block_id):
         else:
             content = item.get(item['type']).get('title')
             if content:
-                html = f'<{tag} href={item.get("id")}> {content} </{tag}><br>'
+                html = f'<{tag} href={item.get("id")}>🗎  {content} </{tag}><br>'
                 raw_html += html
     return raw_html
