@@ -1,0 +1,14 @@
+{% macro make_link(url,link_text) %}
+  <a href="{{url}}" target="_blank">{{link_text}}</a>
+{% endmacro %}
+
+{% macro make_p(item) %}
+  {% if item['text']['link']['url'] %}
+        {{ make_link(item['text']['link']['url'],item['text']['content']) }}
+  {% else %}
+        <p class="">{{ item['text']['content'] }}</p>
+  {% endif %}
+{% endmacro %}
+
+
+
