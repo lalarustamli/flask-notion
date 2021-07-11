@@ -1,5 +1,5 @@
 .idea/
-.flenv/
+flenv/
 venv
 __pycache__/
 config.py
